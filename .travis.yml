@@ -1,8 +1,11 @@
 language:
     - cpp
 
+install:
+    - sudo apt-get install g++-4.8
+
 compiler:
     - gcc
 
 script:
-    - g++ -std=c++11 test.cpp -o prog && ./prog
+    - g++-4.8 -std=c++11 test.cpp -o prog && ./prog
