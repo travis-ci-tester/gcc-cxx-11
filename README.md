@@ -6,3 +6,6 @@
 
 `install.from.external` (**passed**):
 [![Build Status](https://travis-ci.org/travis-ci-tester/travis-test-gcc-cxx-11.png?branch=install.from.external)](https://travis-ci.org/travis-ci-tester/travis-test-gcc-cxx-11)
+
+### Notes
+* cmake toolchain: https://github.com/ruslo/polly#gcc48
