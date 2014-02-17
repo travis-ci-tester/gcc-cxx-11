@@ -7,7 +7,7 @@
 `install.from.external` (**passed**):
 [![Build Status](https://travis-ci.org/travis-ci-tester/travis-test-gcc-cxx-11.png?branch=install.from.external)][repo]
 
-`install.from.external.i386` (**failed**): [![Build Status][install.from.external.i386]][repo]
+`install.from.external.i386` (**passed**): [![Build Status][install.from.external.i386]][repo]
 
 [repo]: https://travis-ci.org/travis-ci-tester/travis-test-gcc-cxx-11
 [install.from.external.i386]: https://travis-ci.org/travis-ci-tester/travis-test-gcc-cxx-11.png?branch=install.from.external.i386
