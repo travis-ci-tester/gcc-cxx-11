@@ -12,4 +12,4 @@ compiler:
     - gcc
 
 script:
-    - g++-4.8 -std=c++11 test.cpp -o prog && ./prog
+    - g++-4.8 -std=c++11 -m32 test.cpp -o prog && ./prog
