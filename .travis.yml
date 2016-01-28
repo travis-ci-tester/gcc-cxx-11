@@ -1,15 +1,21 @@
+sudo:
+  - false
+
 language:
-    - cpp
+  - cpp
 
-before_install:
-    - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-    - sudo apt-get update
-
-install:
-    - sudo apt-get install g++-4.8-multilib libstdc++-4.8-dev
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r/test
+    packages:
+      - g++-4.8-multilib
+      - libstdc++-4.8-dev
 
 compiler:
-    - gcc
+  - gcc
 
 script:
-    - g++-4.8 -std=c++11 -m32 test.cpp -o prog && ./prog
+  - which g++-4.8
+  - g++-4.8 --version
+  - g++-4.8 -std=c++11 -m32 test.cpp -o prog && ./prog
