@@ -4,8 +4,10 @@ sudo:
 language:
   - cpp
 
-install:
-  - sudo apt-get install g++-4.8
+addons:
+  apt:
+    packages:
+      - g++-4.8
 
 compiler:
   - gcc
