@@ -1,12 +1,13 @@
-sudo: false
+sudo:
+  - false
 
 language:
-    - cpp
+  - cpp
 
 compiler:
-    - gcc
+  - gcc
 
 script:
-    - which g++
-    - g++ --version
-    - g++ -std=c++11 test.cpp -o prog && ./prog
+  - which g++
+  - g++ --version
+  - g++ -std=c++11 test.cpp -o prog && ./prog
